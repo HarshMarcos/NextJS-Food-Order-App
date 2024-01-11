@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import MenuItem from "../menu/MenuItem";
 
 const HomeMenu = () => {
   return (
@@ -29,11 +30,14 @@ const HomeMenu = () => {
         </h3>
         <h2 className="text-primary font-bold text-4xl italic">Menu</h2>
       </div>
-      {/* <div className="grid sm:grid-cols-3 gap-4">
-        {bestSellers?.length > 0 && bestSellers.map(item => (
-          <MenuItem key={item._id} {...item} />
-        ))}
-      </div> */}
+      <div className="grid grid-cols-3 gap-4">
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+        <MenuItem />
+      </div>
     </section>
   );
 };
